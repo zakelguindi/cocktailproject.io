@@ -5,6 +5,7 @@
     width: 300px; 
     height: 300px; 
 }
+<<<<<<< HEAD
 
 /* Larger Resolutions */
 @media (min-width:900px){
@@ -18,3 +19,5 @@
     }
 
 }
+=======
+>>>>>>> a1f4b03e63efb634efb418c8eaf2163ce1975d36

@@ -33,6 +33,14 @@ const getCocktailsItem = (cocktail) => {
   h3.innerText = cocktail.strDrink; 
   a.append(h3); 
 
+  const p = document.createElement("p"); 
+  p.textContent = `Instructions: ${cocktail.strInstructions}`; 
+  a.append(p); 
+
+  const img = document.createElement("img"); 
+  img.src = cocktail.strDrinkThumb; 
+  a.append(img); 
+
   return cocktailsSection;
 
 
