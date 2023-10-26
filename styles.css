@@ -8,15 +8,13 @@
 
 /* Larger Resolutions */
 @media (min-width:900px){
-  #main-content {
-    display: flex; 
-    flex: 1; 
-    flex-wrap: wrap; 
-  }
+    
+    .flex-container {
+        display: flex;
+    }
 
-}
-.img-format {
-  width: 60%; 
-  height: 40%; 
-  border: 5px solid black; 
+    .wrap {
+        flex-wrap: wrap;
+    }
+
 }
