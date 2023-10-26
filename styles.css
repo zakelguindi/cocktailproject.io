@@ -6,15 +6,17 @@
     height: 300px; 
 }
 
+.img-format {
+    width: 60%; 
+    height: 40%; 
+    border: 5px solid black; 
+  }
+
 /* Larger Resolutions */
 @media (min-width:900px){
-    
-    .flex-container {
-        display: flex;
+    #main-content {
+      display: flex; 
+      flex: 1; 
+      flex-wrap: wrap; 
     }
-
-    .wrap {
-        flex-wrap: wrap;
-    }
-
 }
