@@ -1,5 +1,23 @@
+<<<<<<< HEAD
 /* Body */
 .cocktail {
     background-color: lightblue;
     border: 5px solid dodgerblue;
+=======
+.brewery {
+  background-color: cornflowerblue;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.brewery:hover {
+  background-color: coral;
+}
+
+.brewery a {
+  color: white;
+  font-size: 1.25em;
+  text-decoration: none;
+>>>>>>> 58f54cc5aeee84212701c35c878108a646831f62
 }
