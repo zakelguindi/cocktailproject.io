@@ -6,6 +6,7 @@
     height: 300px; 
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /* Larger Resolutions */
 @media (min-width:900px){
@@ -21,3 +22,11 @@
 }
 =======
 >>>>>>> a1f4b03e63efb634efb418c8eaf2163ce1975d36
+=======
+
+.img-format {
+  width: 60%; 
+  height: 40%; 
+  border: 5px solid black; 
+}
+>>>>>>> e0977768c4a12895a7d786e0a7ce380d9157d718
