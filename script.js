@@ -39,6 +39,7 @@ const getCocktailsItem = (cocktail) => {
 
   const img = document.createElement("img"); 
   img.src = cocktail.strDrinkThumb; 
+  img.classList.add("img-format"); 
   a.append(img); 
 
   return cocktailsSection;
