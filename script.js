@@ -15,10 +15,10 @@ const showCocktails = async () => {
   let cocktails = await getCocktails(); 
   let cocktailsSection = document.getElementById("main-content"); 
 
-  cocktails.forEach((cocktail) => 
+  cocktails.forEach((cocktail) => {
     cocktailsSection.append(getCocktailsItem(cocktail))
-  );
-}
+  });
+};
 
 const getCocktailsItem = (cocktail) => {
   const cocktailsSection = document.createElement("section");
@@ -34,3 +34,5 @@ const getCocktailsItem = (cocktail) => {
 
 
 };
+
+window.onload = () => showCocktails(); 
