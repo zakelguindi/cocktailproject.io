@@ -4,8 +4,9 @@ const getCocktails = async () => {
   const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a";
 
   try {
-    const repsonse = await fetch(url); 
-    return await response.json();
+    const link = await fetch(url); 
+    console.log(link); 
+    return await link.json();
   } catch(error) {
     console.log(error); 
   }
@@ -14,8 +15,8 @@ const getCocktails = async () => {
 const showCocktails = async () => {
   let cocktails = await getCocktails(); 
   let cocktailsSection = document.getElementById("main-content"); 
-
-  cocktails.forEach((cocktail) => {
+  // cocktailsSection.append(getCocktailsItem(cocktails));
+  cocktails.drinks.forEach((cocktail) => {
     cocktailsSection.append(getCocktailsItem(cocktail))
   });
 };
@@ -25,12 +26,14 @@ const getCocktailsItem = (cocktail) => {
   cocktailsSection.classList.add("cocktail");
 
   const a = document.createElement("a"); 
-  a.href = cocktails.website_url; 
+  a.href = cocktail.website_url; 
   cocktailsSection.append(a); 
 
   const h3 = document.createElement("h3");
-  h3.innerText = cocktails.strDrink; 
+  h3.innerText = cocktail.strDrink; 
   a.append(h3); 
+
+  return cocktailsSection;
 
 
 };
