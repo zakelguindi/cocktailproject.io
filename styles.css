@@ -6,19 +6,15 @@
     height: 300px; 
 }
 
-.brewery {
-  background-color: cornflowerblue;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px;
-}
+/* Larger Resolutions */
+@media (min-width:900px){
+    
+    .flex-container {
+        display: flex;
+    }
 
-.brewery:hover {
-  background-color: coral;
-}
+    .wrap {
+        flex-wrap: wrap;
+    }
 
-.brewery a {
-  color: white;
-  font-size: 1.25em;
-  text-decoration: none;
 }
