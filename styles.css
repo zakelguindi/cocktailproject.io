@@ -5,20 +5,3 @@
     width: 300px; 
     height: 300px; 
 }
-
-.brewery {
-  background-color: cornflowerblue;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px;
-}
-
-.brewery:hover {
-  background-color: coral;
-}
-
-.brewery a {
-  color: white;
-  font-size: 1.25em;
-  text-decoration: none;
-}
